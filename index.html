@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-row">
+                <h1>MyBot</h1>
+                <button id="theme-toggle" type="button" aria-label="Toggle light/dark mode">Light</button>
+            </div>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+<div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+
+            <button id="emoji-button" type="button" aria-label="Insert emoji">&#x1F600;</button>
+            <div class="emoji-picker" id="emoji-picker" aria-hidden="true">
+                <button type="button" class="emoji" data-emoji="\uD83D\uDE00" aria-label="emoji grinning">&#x1F600;</button>
+                <button type="button" class="emoji" data-emoji="\uD83D\uDE02" aria-label="emoji laugh">&#x1F602;</button>
+                <button type="button" class="emoji" data-emoji="\u2764\uFE0F" aria-label="emoji heart">&#x2764;&#xFE0F;</button>
+                <button type="button" class="emoji" data-emoji="\uD83D\uDC4D" aria-label="emoji thumbs up">&#x1F44D;</button>
+                <button type="button" class="emoji" data-emoji="\uD83D\uDE4F" aria-label="emoji praying">&#x1F64F;</button>
+                <button type="button" class="emoji" data-emoji="\uD83C\uDF89" aria-label="emoji party">&#x1F389;</button>
+                <button type="button" class="emoji" data-emoji="\uD83D\uDE22" aria-label="emoji sad">&#x1F622;</button>
+                <button type="button" class="emoji" data-emoji="\uD83E\uDD14" aria-label="emoji thinking">&#x1F914;</button>
+            </div>
+
+
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+<script src="emoji.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
